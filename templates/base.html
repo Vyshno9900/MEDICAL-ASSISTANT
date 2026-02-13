@@ -1,1 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}IMDS{% endblock %}</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="/">IMDS</a>
+      <a href="/about">About</a>
+      <a href="/module/icd">ICD</a>
+      <a href="/module/immuno">Immuno</a>
+      <a href="/module/ai">AI</a>
+      <a href="/module/reports">Reports</a>
+    </div>
+  </nav>
 
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
