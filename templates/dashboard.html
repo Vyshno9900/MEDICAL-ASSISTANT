@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - IMDS{% endblock %}
+{% block content %}
+  <h1>Dashboard</h1>
+  <p class="muted">{{ disclaimer }}</p>
+
+  <div class="grid">
+    <div class="card"><h3>Module 1</h3><p>ICD candidate suggestion</p><a href="/module/icd">Open →</a></div>
+    <div class="card"><h3>Module 2</h3><p>Immuno profiling (proxy)</p><a href="/module/immuno">Open →</a></div>
+    <div class="card"><h3>Module 3</h3><p>Gemini 3 Flash Preview narrative</p><a href="/module/ai">Open →</a></div>
+    <div class="card"><h3>Module 4</h3><p>Generate report</p><a href="/module/reports">Open →</a></div>
+  </div>
+{% endblock %}
