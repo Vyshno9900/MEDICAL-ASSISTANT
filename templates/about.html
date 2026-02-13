@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}About - IMDS{% endblock %}
+{% block content %}
+  <h1>About</h1>
+  <div class="card">
+    <p><b>Project:</b> Intelligent Medical Diagnosis System Based on ICD-10-CM and Immunoinformatics-Driven Disease Profiling</p>
+    <p><b>AI model:</b> {{ model }}</p>
+    <p class="muted">{{ disclaimer }}</p>
+    <p class="muted">Debug: <a href="/debug">/debug</a></p>
+  </div>
+{% endblock %}
